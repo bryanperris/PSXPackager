@@ -1,0 +1,8 @@
+Squid-Box.SevenZipSharp
+SharpZipLib
+7z.Libs
+CommandLineParser
+System.ValueTuple
+MSTest.TestAdapter
+MSTest.TestFramework
+Microsoft.NET.Test.Sdk

@@ -48,6 +48,18 @@ namespace Popstation
 
                 if (FileExtensionHelper.IsArchive(file))
                 {
+                    if (!OperatingSystem.IsWindows()) {
+                        throw new PlatformNotSupportedException(
+                            String.Format(
+                                "Unpacking archives is only supported on Windows for now: {0}",
+                                Environment.OSVersion.VersionString)
+                        );
+
+                        // TODO: SevenZipSharp (Squid-Box) only supports PInvoking 7z.dll on Windows due to kernel32 API calls it relies on
+                        //      Mono was removed by Squid-Box even when its README lists Mono
+                        //      One day fork SevenZipSharp, then use SharpCpp to directly execute 7z dynamic library functions rather than
+                        //      using the traditional LoadLibrary DLL hooking
+                    }
 
                     Unpack(file, options.TempPath, cancellationToken);
 

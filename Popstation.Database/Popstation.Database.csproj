@@ -1,12 +1,16 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
-
-  <PropertyGroup>
-    <TargetFrameworks>net462;netstandard2.0</TargetFrameworks>
-  </PropertyGroup>
+<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
     <ProjectReference Include="..\DiscUtils.Iso9660\DiscUtils.Iso9660.csproj" />
   </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <OutputPath>../bin</OutputPath>
+  </PropertyGroup>
 
   <ItemGroup>
     <None Update="Resources\gameInfo.db">
@@ -14,4 +18,5 @@
     </None>
   </ItemGroup>
 
+  <Import Project="..\.paket\Paket.Restore.targets" />
 </Project>

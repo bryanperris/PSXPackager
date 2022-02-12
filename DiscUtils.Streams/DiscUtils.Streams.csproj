@@ -1,10 +1,11 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
-  <Import Project="../common-library.props" />
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <Description>DiscUtils Streams</Description>
-    <Authors>Kenneth Bell;LordMike;Bianco Veigel</Authors>
-    <PackageTags>DiscUtils;Streams</PackageTags>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <OutputPath>../bin</OutputPath>
   </PropertyGroup>
 
 </Project>

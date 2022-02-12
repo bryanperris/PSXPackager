@@ -1,0 +1,9 @@
+source https://www.nuget.org/api/v2
+nuget 7z.Libs
+nuget CommandLineParser
+nuget Microsoft.NET.Test.Sdk
+nuget MSTest.TestAdapter
+nuget MSTest.TestFramework
+nuget SharpZipLib
+nuget Squid-Box.SevenZipSharp
+nuget System.ValueTuple
