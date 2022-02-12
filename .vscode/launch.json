@@ -10,8 +10,8 @@
             "request": "launch",
             "preLaunchTask": "build",
             "program": "${workspaceFolder}/bin/PSXPackager",
-            "args": [],
-            "cwd": "${workspaceFolder}/PSXPackager",
+            "args": ["-i", "./test.cue"],
+            "cwd": "${workspaceFolder}/bin",
             "console": "internalConsole",
             "stopAtEntry": false
         },
