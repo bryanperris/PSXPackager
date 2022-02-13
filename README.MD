@@ -18,6 +18,19 @@ Feel free to take the Popstation library and use it as you like.
 * Supports writing multi-disc PBP using .m3u files
 * Supports extracting multi-disc PBP
 
+# Building
+
+### Linux
+```
+mono .paket/paket.exe install
+dotnet build -c Release
+```
+
+### Windows
+```
+dotnet build -c Release
+```
+
 # Usage
 
 The basic usage of PSXPackager accepts the file or path to convert.
