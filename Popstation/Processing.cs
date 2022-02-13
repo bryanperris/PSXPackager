@@ -137,6 +137,8 @@ namespace Popstation
 
                             foreach (var fileEntry in m3UFile.FileEntries)
                             {
+                                Console.WriteLine("FileEntry: " + fileEntry);
+
                                 if (FileExtensionHelper.IsCue(fileEntry))
                                 {
                                     var (outfile, srcToc) = ProcessCue(Path.Combine(filePath, fileEntry), options.TempPath);
@@ -468,7 +470,7 @@ namespace Popstation
 
             for (var i = 0; i < srcIsos.Length; i++)
             {
-                gameId = GameDB.FindGameId(srcIso);
+                gameId = GameDB.FindGameId( srcIsos[i]);
                 game = GetGameEntry(gameId, srcIsos[i]);
 
                 options.DiscInfos.Add(new DiscInfo()

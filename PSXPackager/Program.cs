@@ -135,6 +135,8 @@ namespace PSXPackager
                          ResourceFoldersPath = o.ResourceFoldersPath,
                      };
 
+                     options.GenerateResourceFolders = false;
+
                      ProcessFiles(options);
                  });
         }
